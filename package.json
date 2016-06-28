@@ -1,0 +1,19 @@
+{
+  "name": "speak3-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a complete start up repository for creating Sitecore applications in React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxReimerNielsen/speak3-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxReimerNielsen/speak3-boilerplate/issues"
+  },
+  "homepage": "https://github.com/MaxReimerNielsen/speak3-boilerplate#readme"
+}
