@@ -1,0 +1,19 @@
+{
+  "extends": ["airbnb", "plugin:import/errors", "plugin:import/warnings"],
+  "parser": "babel-eslint",
+  "env": {
+    "mocha": true
+  },
+  "plugins": ["import"],
+  "settings":  {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack-basic.config.js"
+      }
+    },
+    "import/ignore": ["node_modules", ".png$", ".jpg$"]
+  },
+  "rules": {
+    "import/no-duplicates": "off"
+  }
+}

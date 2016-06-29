@@ -41,7 +41,7 @@ It is recommended to run this command as Administrator in Windows, since it will
 ```
 
 ### Opening the local website
-Navigate to [http://localhost:3000](http://localhost:3000) in your favorite browser.
+Navigate to [http://localhost:7000](http://localhost:7000) in your favorite browser.
 
 ## Building
 To build the src files, and move them into the build/ folder, which can then be used by another project or web server, simply execute this in a commandline.
@@ -53,7 +53,7 @@ To build the src files, and move them into the build/ folder, which can then be 
 ## Testing
 ### Running all tests (Karma, PhantomJS)
 ```sh
-<ProjectRoot> npm run test:all
+<ProjectRoot> npm run test
 ```
 
 ### Running one spec or folder (Karma, PhantomJS, watch mode enabled)
@@ -95,6 +95,9 @@ Simple run this command to do all these steps:
 
 ## Visual Studio Code integration
 All these are option, so you can skip this, if you use Visual Studio, or other clients.
+
+### Known issues in VSCode
+- npm script `test:specific` throws warnings, due to VSCode and Node scripts doesn't have the same handling of drive-letters (etc. C: vs c:).
 
 ### Running all tests in VSCode
 - Press F1

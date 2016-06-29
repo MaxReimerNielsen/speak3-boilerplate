@@ -1,0 +1,58 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "0.1.0",
+  "command": "npm",
+  "isShellCommand": true,
+  "showOutput": "always",
+  "suppressTaskName": true,
+  "promptOnClose": true,
+  "tasks": [
+    {
+      "taskName": "install",
+      "args": [
+        "install"
+      ]
+    },
+    {
+      "taskName": "test",
+      "args": [
+        "run",
+        "test:specific",
+        "--",
+        "--check=${fileDirname}/*.spec.js"
+      ]
+    },
+    {
+      "taskName": "test all",
+      "args": [
+        "run",
+        "test"
+      ]
+    },
+    {
+      "taskName": "update",
+      "args": [
+        "update"
+      ]
+    },
+    {
+      "taskName": "build",
+      "args": [
+        "run",
+        "build"
+      ]
+    },
+    {
+      "taskName": "Lint: Fix as many lint issues as possible",
+      "args": ["run", "lint:fix"]
+    },
+    {
+      "taskName": "lint all",
+      "args": [
+        "run",
+        "lint"
+      ]
+    }
+  ]
+}

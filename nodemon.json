@@ -1,0 +1,11 @@
+{
+  "watch": [
+    "webpack-basic.config.js",
+    "webpack-dev.config.js",
+    "webpack-prod.config.js",
+    "webpack-test.config.js",
+    "nodemon.json",
+    "server.js",
+    "package.json"
+  ]
+}
