@@ -28,7 +28,7 @@ process.env.NODE_ENV = 'test';
 module.exports = (config) => {
   config.set({
     basePath: '',
-    frameworks: ['mocha', 'chai'],
+    frameworks: ['phantomjs-shim', 'mocha', 'chai'],
     files: mergeFilesWithArgv([fileGlob]),
     preprocessors: {
       [fileGlob]: ['webpack'],
