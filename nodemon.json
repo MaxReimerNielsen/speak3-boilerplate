@@ -6,6 +6,8 @@
     "webpack-test.config.js",
     "nodemon.json",
     "server.js",
+    "server-json-mock.js",
+    "server-webpack-dev.js",
     "package.json"
   ]
 }
