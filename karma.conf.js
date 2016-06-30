@@ -41,7 +41,7 @@ module.exports = (config) => {
         { type: 'text-summary' },
       ],
     },
-    port: 7001,
+    port: 7002,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: false,

@@ -12,7 +12,7 @@ describe('<HelloWorld />', () => {
       <HelloWorld />
     );
 
-    assert.equal(helloWorld.html(), '<div>HelloWorld!</div>');
+    expect(helloWorld.html()).to.equal('<div>HelloWorld!</div>');
   });
 
   it('should use the style given', () => {

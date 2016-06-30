@@ -2,10 +2,16 @@ import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 
 function Master(props) {
+  const defaultLinkProps = {
+    className: 'btn btn-default',
+    activeClassName: 'btn-primary',
+  };
+
   return (
     <div>
       <nav>
-        <Link to="/home">Home</Link>
+        <Link to="/home" {...defaultLinkProps}>Home</Link>
+        <Link to="/books" {...defaultLinkProps}>Books</Link>
       </nav>
       <div>
         <div>
