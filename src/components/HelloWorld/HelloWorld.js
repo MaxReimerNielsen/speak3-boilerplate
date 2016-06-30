@@ -1,4 +1,6 @@
 import React, { Component, PropTypes } from 'react';
+import radium from 'radium';
+import defaultStyle from './HelloWorld.style';
 
 class ComponentCard extends Component {
   static propTypes = {
@@ -13,11 +15,13 @@ class ComponentCard extends Component {
   };
 
   render() {
+    const styles = Object.assign({}, defaultStyle, this.props.style);
+
     return (
-      <div style={this.props.style}>
+      <div style={styles}>
         HelloWorld!
       </div>
     );
   }
 }
-export default ComponentCard;
+export default radium(ComponentCard);
