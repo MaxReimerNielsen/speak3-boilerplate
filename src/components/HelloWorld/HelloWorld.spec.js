@@ -1,5 +1,5 @@
 import React from 'react';
-import chai, { assert, expect } from 'chai';
+import chai, { expect } from 'chai';
 import { shallow } from 'enzyme';
 import spies from 'chai-spies';
 import HelloWorld from './HelloWorld';

@@ -26,7 +26,7 @@ class BooksPage extends Component {
 }
 
 function mapStateToProps({ books }) {
-  return books;
+  return { books };
 }
 
 function mapDispatchToProps(dispatch) {

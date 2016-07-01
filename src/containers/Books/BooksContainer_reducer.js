@@ -1,5 +1,4 @@
 import { HOME_GETDATA } from './ActionTypes';
-import { combineReducers } from 'redux';
 
 const books = (state = [], action) => {
   switch (action.type) {
@@ -11,4 +10,4 @@ const books = (state = [], action) => {
   }
 };
 
-export default combineReducers({ books });
+export default books;
