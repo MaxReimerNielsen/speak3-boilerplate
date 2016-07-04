@@ -15,6 +15,10 @@ describe('<BookList />', () => {
       <BookList data={data} />
     );
 
-    assert.equal(helloWorld.html(), '<ul><li>Hello by World</li></ul>');
+    assert.equal(helloWorld.html(),
+      '<ul class="list-group"><li class="list-group-item">' +
+      '<h4 class="list-group-item-heading">Hello</h4>' +
+      '<p class="list-group-item-text">World</p></li></ul>'
+    );
   });
 });
