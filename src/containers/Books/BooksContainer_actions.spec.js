@@ -9,6 +9,7 @@ describe('ActionTypes', () => {
       Ideas to consider:
         - Introducing Redux-Saga
         - Introducing polyfills for fetch and promise in Node and Internet Explorer
+        - Introducing mocking of service
     */
     global.fetch = () => ({ then: () => 'HelloWorld' });
   });
