@@ -18,7 +18,7 @@
     "test:phantomjs": "karma start --browsers PhantomJS",
     "test:ie": "karma start --browsers IE",
     "test:check-coverage": "istanbul check-coverage --statement 50",
-    "validate": "npm-run-all validate:webpack lint test:all test:check-coverage",
+    "validate": "npm-run-all validate:webpack lint test test:check-coverage",
     "validate:webpack": "npm-run-all --parallel validate:webpack:basic validate:webpack:dev validate:webpack:prod validate:webpack:test",
     "validate:webpack:basic": "webpack-validator webpack-basic.config.js",
     "validate:webpack:dev": "webpack-validator webpack-dev.config.js",
