@@ -1,4 +1,6 @@
 import React, { PropTypes } from 'react';
+import ListGroup from 'react-bootstrap/lib/ListGroup';
+import ListGroupItem from 'react-bootstrap/lib/ListGroupItem';
 
 function BookList(props) {
   const {
@@ -6,13 +8,13 @@ function BookList(props) {
   } = props;
 
   const books = data.map((book, index) => (
-    <li key={index}>{book.title} by {book.author}</li>
+    <ListGroupItem key={index} header={book.title}>{book.author}</ListGroupItem>
   ));
 
   return (
-    <ul>
+    <ListGroup>
       {books}
-    </ul>
+    </ListGroup>
   );
 }
 

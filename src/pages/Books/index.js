@@ -3,7 +3,7 @@ import BooksContainers from '../../containers/Books/BooksContainer';
 
 function BooksPage(props) {
   return (
-    <div>
+    <div className="container">
       <h2>You should read these books</h2>
       <BooksContainers data={props.books} />
     </div>
